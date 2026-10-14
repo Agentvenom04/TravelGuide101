@@ -7,18 +7,17 @@
   <title>E &amp; B. | Find your place</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="header-inner container">
       <a class="brand" href="#home" aria-label="E & B home">E<span>&amp;</span>B.</a>
-      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
-      <label class="menu-button" for="menu-toggle" aria-label="Open or close navigation menu">
-        <span></span><span></span><span></span>
-      </label>
+      <a class="menu-button menu-open" href="#site-header" aria-label="Open navigation menu"><span></span><span></span><span></span></a>
+      <a class="menu-button menu-close" href="#" aria-label="Close navigation menu"><span></span><span></span></a>
       <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="#about" >About us</a>
         <a href="#services" >Our services</a>
         <a href="explore.html">Explore homes</a>
@@ -110,7 +109,7 @@
         <p>Thoughtful moves. Better beginnings.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="index.html">Home</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="explore.html">Explore homes</a>
         <a href="#services">Our services</a>
         <a href="#about">About us</a>
