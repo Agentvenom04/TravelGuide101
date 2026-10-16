@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact E & B. — visit our office in Struga, call us, or send a message about buying, selling, or renting.">
+  <title>Contact | E &amp; B.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="E and B home">E<span>&amp;</span>B.</a>
+      <a class="menu-button menu-open" href="#site-header" aria-label="Open navigation menu"><span></span><span></span><span></span></a>
+      <a class="menu-button menu-close" href="#" aria-label="Close navigation menu"><span></span><span></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="services.html">Our services</a>
+        <a href="explore.html">Explore homes</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+    <section class="page-hero container" aria-labelledby="page-title">
+      <div class="page-hero-copy">
+        <p class="eyebrow">Get in touch</p>
+        <h1 id="page-title">Let's talk about<br>your next <span>home.</span></h1>
+        <p class="hero-description">Call us, visit our office, or send a message. An advisor will reply within one working day.</p>
+        <a class="button button-primary" href="#message">Send a message</a>
+      </div>
+      <div class="page-hero-image-wrap">
+        <picture>
+          <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=720&q=80">
+          <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85">
+          <img class="page-hero-image" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85" alt="Bright, modern office hallway with a kitchen area" fetchpriority="high">
+        </picture>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section-pad" id="message" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-blue">We're here to help</p>
+          <h2 id="contact-title">How can we help you?</h2>
+          <p>Choose what suits you best. There are no silly questions.</p>
+        </div>
+        <div class="contact-layout">
+          <ul class="contact-details">
+            <li class="info-card">
+              <h3>Visit our office</h3>
+              <address>Bulevar Turisticka 14<br>6330 Struga, North Macedonia</address>
+            </li>
+            <li class="info-card">
+              <h3>Call us</h3>
+              <p><a href="tel:+38946123456">+389 46 123 456</a></p>
+            </li>
+            <li class="info-card">
+              <h3>Email us</h3>
+              <p><a href="mailto:hello@havenandco.example">hello@havenandco.example</a></p>
+            </li>
+            <li class="info-card">
+              <h3>Opening hours</h3>
+              <p>Mon–Fri: 09:00–18:00<br>Sat: 10:00–14:00<br>Sun: Closed</p>
+            </li>
+          </ul>
+
+          <form class="contact-form" action="mailto:hello@havenandco.example" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Ana Petrova" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="ana@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+389 70 000 000">
+              </div>
+              <div class="form-field">
+                <label for="topic">I'm interested in</label>
+                <select id="topic" name="topic" required>
+                  <option value="buying">Buying a home</option>
+                  <option value="selling">Selling a home</option>
+                  <option value="renting">Renting a home</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="message-text">Message</label>
+              <textarea id="message-text" name="message" rows="5" placeholder="Tell us a little about what you're looking for." required></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Send message</button>
+            <p class="form-note">This demo form opens your email app. We never share your details.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad section-muted" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-blue">Good to know</p>
+          <h2 id="faq-title">Frequently asked questions.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is the first meeting really free?</summary>
+            <p>Yes. The first chat, in our office or by phone, is free and comes with no obligation.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you only work in Struga?</summary>
+            <p>Most of our homes are in Struga and Ohrid, but we also help clients across the Lake Ohrid region.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you help if I live abroad?</summary>
+            <p>Of course. We offer video viewings, digital documents, and can manage the whole process remotely.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How quickly will you reply?</summary>
+            <p>We answer every message within one working day, usually much sooner.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-intro"><a class="footer-brand" href="index.html">E<span>&amp;</span>B.</a><p>Thoughtful moves. Better beginnings.</p></div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="explore.html">Explore homes</a><a href="services.html">Our services</a><a href="about.html">About us</a><a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <p class="copyright">Copyright &copy; 2026 E &amp; B.</p>
+    </div>
+  </footer>
+</body>
+</html>
