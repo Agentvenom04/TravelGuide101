@@ -45,6 +45,7 @@ body {
 
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
+figure { margin: 0; }
 
 a:focus-visible,
 .button:focus-visible {
@@ -236,8 +237,9 @@ h2 {
   display: flex;
   align-items: center;
   gap: var(--layout-gap);
-  padding-top: 44px;
-  padding-bottom: 78px;
+  padding: 44px max(var(--gutter), (100% - var(--content-width)) / 2) 78px;
+  color: var(--off-white);
+  background: var(--navy);
 }
 
 .hero-copy { flex: 1 1 42%; min-width: 0; }
@@ -304,6 +306,9 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .feature-card { flex: 1 1 0; min-width: 0; max-width: 260px; }
@@ -357,11 +362,20 @@ h2 {
   .feature-image-frame { aspect-ratio: 16 / 10; }
 }
 
-.listing-list { display: flex; align-items: stretch; gap: 24px; }
+.listing-list {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listing-list > li { display: flex; flex: 1 1 0; min-width: 0; }
 
 .listing-card {
   display: flex;
-  flex: 1 1 0;
+  flex: 1;
   flex-direction: column;
   min-width: 0;
   overflow: hidden;
@@ -430,6 +444,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 14px;
+  margin: 0;
   padding: 13px 0;
   border-top: 1px solid var(--pale-gray);
   border-bottom: 1px solid var(--pale-gray);
@@ -437,7 +452,8 @@ h2 {
   font-size: 12px;
 }
 
-.listing-details strong { color: var(--navy); font-weight: 700; }
+.listing-details dt { display: inline; color: var(--navy); font-weight: 700; }
+.listing-details dd { display: inline; margin: 0; }
 
 .listing-bottom {
   display: flex;
@@ -466,12 +482,12 @@ h2 {
 
 @media (max-width: 800px) {
   .listing-list { flex-wrap: wrap; gap: 22px; }
-  .listing-card { flex: 1 1 calc(50% - 22px); }
+  .listing-list > li { flex: 1 1 calc(50% - 22px); }
 }
 
 @media (max-width: 600px) {
   .listing-list { flex-direction: column; }
-  .listing-card { flex: 1 1 auto; width: 100%; }
+  .listing-list > li { flex: 1 1 auto; width: 100%; }
   .listing-image-wrap { aspect-ratio: 16 / 10; }
   .listing-content { padding: 17px; }
   .listing-content h3 { font-size: 18px; }
